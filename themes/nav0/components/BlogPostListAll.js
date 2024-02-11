@@ -1,7 +1,7 @@
 /* eslint-disable */
 import BlogPostListEmpty from './BlogPostListEmpty'
 import BlogPostItem from './BlogPostItem'
-import { useNavGlobal } from '@/themes/nav'
+import { useNavGlobal } from '@/themes/nav0'
 import CONFIG from '../config'
 import { siteConfig } from '@/lib/config'
 
