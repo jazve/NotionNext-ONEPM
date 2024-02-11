@@ -22,7 +22,7 @@ const Style = () => {
         background-color: rgb(251 251 251 / 70%);
     }*/
     .main-menu {
-        box-shadow: 0 1px 4px rgb(0 0 0/8%);
+        // box-shadow: 0 1px 4px rgb(0 0 0/8%);
     }
     .nav-menu {
         padding: 8px 0px 4px 0px;
