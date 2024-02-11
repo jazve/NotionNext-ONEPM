@@ -1,4 +1,4 @@
-import { useNavGlobal } from '@/themes/nav0'
+import { useNavGlobal } from '@/themes/nav'
 import NavPostList from './NavPostList'
 
 /**

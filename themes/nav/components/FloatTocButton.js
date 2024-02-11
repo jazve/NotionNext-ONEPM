@@ -1,4 +1,4 @@
-import { useNavGlobal } from '@/themes/nav0'
+import { useNavGlobal } from '@/themes/nav'
 
 /**
  * 移动端悬浮目录按钮
