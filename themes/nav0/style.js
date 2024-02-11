@@ -66,15 +66,15 @@ const Style = () => {
     .card {
         cursor: pointer;
         transition: box-shadow 0.1s ease-in-out;
-        box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+        // box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
         /*background-color: #fff;
         height: calc(100% - 16px);
         overflow: visible;
         padding: 15px;
-        border-radius: 0.75rem;
+        border-radius: 8px;
         /*border-radius: 8px;*/
         margin-bottom: 16px !important;
-        box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+        // box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
         cursor: pointer;
         display: flow-root;
         position: relative;
