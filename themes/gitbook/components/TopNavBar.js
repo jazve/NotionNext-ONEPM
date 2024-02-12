@@ -39,7 +39,7 @@ export default function TopNavBar(props) {
   }
 
   return (
-        <div id='top-nav' className={'fixed top-0 w-full z-40 ' + className}>
+        <div id='top-nav' className={'fixed bottom-0 w-full z-40 ' + className}>
 
             {/* 移动端折叠菜单 */}
             <Collapse type='vertical' collapseRef={collapseRef} isOpen={isOpen} className='md:hidden'>
@@ -49,7 +49,7 @@ export default function TopNavBar(props) {
             </Collapse>
 
             {/* 导航栏菜单 */}
-            <div className='flex w-full h-14 glassmorphism border-b border-opacity-30 bg-white dark:bg-hexo-black-gray px-7 items-between'>
+            <div className='flex w-full h-14 glassmorphism border-t border-opacity-30 bg-white dark:bg-hexo-black-gray px-7 items-between'>
 
                 {/* 左侧图标Logo */}
                 <LogoBar {...props} />
