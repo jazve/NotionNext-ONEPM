@@ -73,21 +73,21 @@ const LayoutBase = (props) => {
                     {/* 左侧推拉抽屉 */}
                     {fullWidth
                       ? null
-                      : (<div className={'font-sans hidden md:block border-r dark:border-transparent relative z-10 '}>
+                      : (<div className={'font-sans hidden md:flex md:flex-row border-r dark:border-transparent relative z-10 '}>
                         <div className='w-72 py-14 px-6 sticky top-0 overflow-y-scroll h-screen scroll-hidden'>
-                            {slotLeft}
-                            <SearchInput className='my-3 rounded-md' />
-                            <div className='mb-20'>
-                                {/* 所有文章列表 */}
-                                <NavPostList filteredNavPages={filteredNavPages} />
-                            </div>
+                          {slotLeft}
+                          <SearchInput className='my-3 rounded-md' />
+                        </div>
 
+                        <div className='w-72 py-14 px-6 sticky top-0 overflow-y-scroll h-screen scroll-hidden'>
+                          {/* 所有文章列表 */}
+                          <NavPostList filteredNavPages={filteredNavPages} />
                         </div>
 
                         <div className='w-72 fixed left-0 bottom-0 z-20 bg-white'>
-                            <Footer {...props} />
+                          <Footer {...props} />
                         </div>
-                    </div>) }
+                      </div>) }
 
                     <div id='center-wrapper' className='flex flex-col justify-between w-full relative z-10 pt-14 min-h-screen'>
 
