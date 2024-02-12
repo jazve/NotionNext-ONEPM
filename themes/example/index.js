@@ -72,18 +72,18 @@ const LayoutBase = props => {
 
 
       {/* 主体 */}
-      <div id='container-inner' className="w-full  p-10 z-10">
+      <div id='container-inner' className="w-full m-8 z-10">
 
         {/* 标题栏 */}
         {/* {fullWidth ? null : <Title {...props} />} */}
 
-        <div id='container-wrapper' className={(JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE')) ? 'flex-row-reverse' : '') + 'fixed container mx-auto justify-center md:flex items-start py-8 px-2 border my-5'} style={{ overflow: 'hidden' }}>
+        <div id='container-wrapper' className={(JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE')) ? 'flex-row-reverse' : '') + 'fixed container mx-auto justify-center md:flex items-start p-8 border my-5'} style={{ overflow: 'hidden' }}>
           {/* 侧边栏 */}
           {!fullWidth && <SideBar {...props} />}
 
           {/* 内容 */}
           <div className='w-full flex justify-center items-center'>
-            <div className={`w-full p-5`} style={{ overflowY: 'auto', maxHeight: '640px' }}>
+            <div className={`w-full p-8`} style={{ overflowY: 'auto', maxHeight: '640px' }}>
               <Transition
                 show={!onLoading}
                 appear={true}
